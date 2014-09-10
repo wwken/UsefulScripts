@@ -46,9 +46,13 @@ def execCommand(c, debugFlag=False):
 	child = subprocess.Popen(c, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	(stdout, stderr)=child.communicate()
 	stdout=stdout.strip()
-	outPut = stdout.split("\n")
-	if debugFlag == True:
-		logger.debug("In execCommand, returning: %s" % outPut )
+	erroutPut = None
+	if stderr:
+		outPut = stderr.split("\n")
+	else:
+		outPut = stdout.split("\n")
+		if debugFlag == True:
+			logger.debug("In execCommand, returning: %s" % outPut )
 	return outPut
 	
 def isEmptyOutput(li):
