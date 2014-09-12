@@ -11,10 +11,14 @@ Parameters:
 3)	login user
 
 Usage: 
-1) To exeute the script runStep1.sh from 20140101 to 20141231 by running 30 days in each run (i.e. cutting the whole execution into 12 times)
-	./hadoopJobIdsKillWithRange.py /home/kwu/scripts/runStep1.sh 20140101 20141231 30
+1) To kill the job job20141234_2345 and the next 29 jobs logged in as user etl
+	./hadoopJobIdsKillWithRange.py job20141234_2345 -n 30 -u etl
 
-
+2) To kill the job job20141234_2345 only
+	./hadoopJobIdsKillWithRange.py job20141234_2345
+	
+3) To kill the job job20141234_2345 logged in as user etl
+	./hadoopJobIdsKillWithRange.py job20141234_2345 -u etl
 """
 
 ##### Start: Standard libraries ################################################################################################################
