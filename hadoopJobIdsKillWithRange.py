@@ -11,14 +11,14 @@ Parameters:
 3)	login user
 
 Usage: 
-1) To kill the job job20141234_2345 and the next 29 jobs logged in as user etl
-	./hadoopJobIdsKillWithRange.py job20141234_2345 -n 30 -u etl
+1) To kill the job job_20140910_2345 and the next 29 jobs logged in as user etl
+	./hadoopJobIdsKillWithRange.py job_20140910_2345 -n 30 -u etl
 
-2) To kill the job job20141234_2345 only
-	./hadoopJobIdsKillWithRange.py job20141234_2345
+2) To kill the job job_20140910_2345 only
+	./hadoopJobIdsKillWithRange.py job_20140910_2345
 	
-3) To kill the job job20141234_2345 logged in as user etl
-	./hadoopJobIdsKillWithRange.py job20141234_2345 -u etl
+3) To kill the job job_20140910_2345 logged in as user etl
+	./hadoopJobIdsKillWithRange.py job_20140910_2345 -u etl
 """
 
 ##### Start: Standard libraries ################################################################################################################
@@ -63,12 +63,12 @@ debug = False
 ###### Start: Customized functions #############################################################################################################
 
 def getTheJobName(jID):
-	name,_ = jID.split("_")
+	name,_ = jID.rsplit("_", 1)
 	#print "num: " + num
 	return str(name)
 
 def getTheJobNumber(jID):
-	_,num = jID.split("_")
+	_,num = jID.rsplit("_", 1)
 	#print "num: " + num
 	return int(num)
 
