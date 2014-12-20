@@ -13,6 +13,11 @@ user1@user1-machine:~$ cd UsefulScripts
 user1@user1-machine:~/UsefulScripts$ <b>./install.sh</b>
 </pre>
 
+Step 3: Source the newly updated bash_rc
+<pre>
+user1@user1-machine:~$ <b>source "$HOME/.bash_rc"</b>
+</pre>
+
 ### Update (for those who have previously installed already)
 More simple!  Just follow the step 2 (i.e. just execute the <b>./install.sh</b>) in the above Installation section. 
 ### Usage
