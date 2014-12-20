@@ -1,6 +1,4 @@
 ###Useful scripts
-=========
-
 This repo contains some small useful utility scripts that are written in python or shell.
 
 ### Installation (first time)
