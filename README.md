@@ -1,5 +1,5 @@
-###Useful scripts
-This repo contains some small useful utility scripts that are written in python or shell.
+##Useful scripts
+This repo contains some small useful utility scripts that are written in python or shell.  They are all becoming very handy especially for heavy duty unix/mac programmers or system administrators.
 
 ### Installation (first time)
 Step 1: clone this repo to your local drive, say under directory: /home/user1/
@@ -14,7 +14,7 @@ user1@user1-machine:~/UsefulScripts$ <b>./install.sh</b>
 </pre>
 
 ### Update (have previously installed already)
-More simple!  Just follow the step 2 in the above Installation section
+More simple!  Just follow the step 2 (i.e. just execute the <b>./install.sh</b>) in the above Installation section. 
 
 
 ### What is each script?
