@@ -17,8 +17,8 @@
 # Author: Ken Wu
 # Date: 2014 December
 
-if [ ! -d "/usr/local/bin/usefulscripts" ]; then
-	mkdir -p /usr/local/bin/usefulscripts
+if [ ! -d "/usr/local/bin/usefulscripts/lib" ]; then
+	mkdir -p /usr/local/bin/usefulscripts/lib
 fi 
 
 
@@ -28,7 +28,13 @@ curl https://github.com/wwken/UsefulScripts/blob/master/hadoopJobIdsKillWithRang
 curl https://github.com/wwken/UsefulScripts/blob/master/killAllPSWith.py > /usr/local/bin/usefulscripts/killAllPSWith.py
 curl https://github.com/wwken/UsefulScripts/blob/master/mavenBuild.py > /usr/local/bin/usefulscripts/mavenBuild.py
 curl https://github.com/wwken/UsefulScripts/blob/master/renameFolders.sh > /usr/local/bin/usefulscripts/renameFolders.sh
+
+curl https://github.com/wwken/UsefulScripts/blob/master/lib/__init__.py > /usr/local/bin/usefulscripts/lib/__init__.py
+curl https://github.com/wwken/UsefulScripts/blob/master/lib/commands.py > /usr/local/bin/usefulscripts/lib/commands.py
+curl https://github.com/wwken/UsefulScripts/blob/master/lib/printings.py > /usr/local/bin/usefulscripts/lib/printings.py
+
 #curl https://github.com/wwken/UsefulScripts/blob/master/ > /usr/local/bin/
+#curl https://github.com/wwken/UsefulScripts/blob/master/lib > /usr/local/bin/usefulscripts/lib/
 
 chmod 700 /usr/local/bin/usefulscripts/*.sh       #Optional, in case the *sh is not executable
 chmod 700 /usr/local/bin/usefulscripts/*.py       #Optional, in case the *py is not executable
