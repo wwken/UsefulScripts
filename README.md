@@ -1,8 +1,29 @@
-Utilities
-=========
+##Useful scripts
+This repo contains some small useful utility scripts that are written in python or shell.  They are all becoming very handy especially for heavy duty unix/mac programmers or system administrators.
 
-This repo contains some small useful utility scripts that are written in python or shell.
+### Installation (first time)
+Step 1: clone this repo to your local drive, say under directory: /home/user1/
+<pre>
+user1@user1-machine:~$ <b>git clone https://github.com/wwken/UsefulScripts.git</b>
+</pre>
 
+Step 2: cd into UsefulScripts directory and run the install.sh
+<pre>
+user1@user1-machine:~$ cd UsefulScripts
+user1@user1-machine:~/UsefulScripts$ <b>./install.sh</b>
+</pre>
+
+Step 3: Source the newly updated bash_rc
+<pre>
+user1@user1-machine:~$ <b>source "$HOME/.bash_rc"</b>
+</pre>
+
+### Update (for those who have previously installed already)
+More simple!  Just follow the step 2 (i.e. just execute the <b>./install.sh</b>) in the above Installation section. 
+### Usage
+Basically in the terminal window execute the corresponding script.  For example, to execute the execScriptsWithRange.py, just do "execScriptsWithRange.py /home/kwu/scripts/runStep1.sh 20140101 20141231 30" any directory from the terminal
+
+### What is each script?
 <b>execScriptsWithRange.py</b>
 <br/>
 This script is to execute a given script with the start date and end date and numOfDaysEachRun as parameters.
