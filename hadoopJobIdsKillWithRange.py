@@ -75,8 +75,14 @@ def getTheJobNumber(jID):
 def incrementTheJobID (jID):
 	jNum = getTheJobNumber(jID);	#it should return the last n digits of the job which is interpreted as number
 	jNum += 1
+	_,numStr = jID.rsplit("_", 1)
+	jNumStr = str(jNum)
+	numZeroNeeded = len(numStr) - len(str(jNum))
+	while numZeroNeeded > 0:
+		jNumStr = '0'+jNumStr
+		numZeroNeeded -=1
 	jName = getTheJobName(jID);
-	return jName + "_" + str(jNum)
+	return jName + "_" + jNumStr
 
 ###### End:   Customized functions #############################################################################################################
 
