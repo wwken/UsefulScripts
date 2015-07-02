@@ -30,8 +30,8 @@ from lib.io import get_all_files
 from boto.s3.connection import S3Connection
 
 LOCAL_PATH = '/tmp/s3/semantria/'
-aws_key = 'AKIAIWA7E7UACZX7BCFQ'
-aws_secret = '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'
+aws_key = '<>'
+aws_secret = '<>'
 
 new_topics = ['Automotive','Auto_Parts','Hybrid_Cars','Luxury_Cars','SUVs','Business','Career','Eco-Friendly','Non-Profit','Politics','Small_Business','Banking','Credit_Cards','Investing','Online_Payment','Beverages','Groceries','Dining','Holiday_Party','Alcohol','Health_Conditions','Wellness_and_Fitness','Babies','Teenagers','Children','Coupons_and_Deals','Shopping','Holiday_Shopping','Luxury_Shopping','Pets','Real_Estate','Wedding','Celebrities','Movies','Music','Television','Gaming','Home_Appliances','Home_Improvement','Baseball','Basketball','Football','Sport_News','Outdoor_Sports','Sport_Retail','Soccer','Tennis','Fashion_Accessories','Beauty','Apparel', 'Electronics','Mobile_Devices','Airlines','Economy_Travel','Hotels','Luxury_Travel','Tourism']
 semantria_orig_folder_name_handle = 'semantria'
