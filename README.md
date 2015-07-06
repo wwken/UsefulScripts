@@ -50,3 +50,7 @@ The all other parameters are the project name that we want to maven build.
 <b>renameFolders.sh</b>
 <br/>
 This script is to rename folders recursively.  
+
+<b>searchAndReplaceInFolders.sh</b>
+<br/>
+This script is to search for a given string and replace it with another string in the given folder recursively.  
