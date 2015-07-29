@@ -24,6 +24,10 @@ More simple!  Just follow the step 2 (i.e. just execute the <b>./install.sh</b>)
 Basically in the terminal window execute the corresponding script.  For example, to execute the execScriptsWithRange.py, just do "execScriptsWithRange.py /home/kwu/scripts/runStep1.sh 20140101 20141231 30" any directory from the terminal
 
 ### What is each script?
+<b>countNumOfMByptesOfaDistributedFolder.sh</b>
+<br/>
+This script becomes handy when you need to count how many mega bytes of data in a given distributed folder (can be s3 or hdfs...etc).
+
 <b>execScriptsWithRange.py</b>
 <br/>
 This script is to execute a given script with the start date and end date and numOfDaysEachRun as parameters.
