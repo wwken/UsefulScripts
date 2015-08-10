@@ -10,8 +10,8 @@ This is a library file
 import subprocess
 ##### End: Standard libraries ###################################################################################################################
 
-def execCommand(c, debugFlag=False):
-	child = subprocess.Popen(c, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+def execCommand(c, debugFlag=False, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE):
+	child = subprocess.Popen(c, shell=shell, stdout=stdout, stderr=stderr)
 	(stdout, stderr)=child.communicate()
 	stdout=stdout.strip()
 	erroutPut = None
