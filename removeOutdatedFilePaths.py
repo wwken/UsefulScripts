@@ -123,12 +123,13 @@ for p in filePathPatterns:
 			#print o
 		else:
 			content = o.split()
-			date_str = content[5] + ' ' + content[6]
-			date_obj = datetime.strptime( date_str, "%Y-%m-%d %H:%M" )
-			if not max_date_obj or max_date_obj < date_obj:
-				max_date_obj = date_obj
-			tu = (bucketId, date_obj, content[7])
-			l.append(tu)
+			if len(content) > 4:
+				date_str = content[5] + ' ' + content[6]
+				date_obj = datetime.strptime( date_str, "%Y-%m-%d %H:%M" )
+				if not max_date_obj or max_date_obj < date_obj:
+					max_date_obj = date_obj
+				tu = (bucketId, date_obj, content[7])
+				l.append(tu)
 	if max_date_obj:			
 		ld[bucketId] = l
 		bucketId_and_maxDate_stats.append((bucketId, max_date_obj))
