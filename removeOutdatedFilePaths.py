@@ -141,10 +141,11 @@ for p in filePathPatterns:
 			#Now i is the bucket ID that to be deleted
 			allPaths = ld[i]
 			for pp in allPaths:
-				logger.info('this path to be deleted: %s'%(pp[2]))
-				command_del_str = commandToDel + ' ' +p
+				path_to_be_deleted = pp[2]
+				logger.info('this path to be deleted: %s'%(path_to_be_deleted))
+				command_del_str = commandToDel + ' ' +path_to_be_deleted
 				out = lib.commands.execCommand(command_del_str, shell=True, stdout=subprocess.PIPE, stderr=None)
-				logger.info('this path deleted: %s'%(pp[2]))
+				logger.info('this path deleted: %s'%(path_to_be_deleted))
 	else:
 		logger.info('Nothing to delete for path %s since it only has %s paths inside'%(p, lenOfbucketId_and_maxDate_stats))
 
