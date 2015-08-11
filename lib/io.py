@@ -22,11 +22,13 @@ def get_all_files(mypath):
 	onlyfiles = [ f for f in listdir(mypath) if isfile(join(mypath,f)) ]
 	return onlyfiles
 
-def read_lines(file_path, is_critical=False):
+def read_lines(file_path, is_critical=False, replace_new_line=False):
     file = None
     try:
         file = open(file_path, 'r')
         lines = file.readlines()
+        if replace_new_line:
+            lines = map(lambda x: x.replace('\n', '') if x else None, lines)
         return lines
     except:
         errro_str='Failed reading the file: %s' % file_path
