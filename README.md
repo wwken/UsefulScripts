@@ -58,3 +58,7 @@ This script is to rename folders recursively.
 <b>searchAndReplaceInFolders.sh</b>
 <br/>
 This script is to search for a given string and replace it with another string in the given folder recursively.  
+
+<b>telnetPort-Mac.sh</b>
+<br/>
+This script is to determinte who is listening on a given TCP port on Mac OS X
